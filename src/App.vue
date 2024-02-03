@@ -1,16 +1,17 @@
 <template>
   <div class="container">
-   <h1>Учёт корзин</h1
-    </div>
+      <h1>Учёт корзин</h1>
+    <Card/>
+  </div>
 </template>
 
 <script>
-import card from './components/CARD.vue' 
-
+ /* eslint-disable */ 
+import Card from './components/card.vue' 
 export default {
   name: 'App',
   components: {
-   
+   Card
   }
 }
 </script>
