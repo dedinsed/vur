@@ -1,19 +1,31 @@
 <template>
   <div class="container">
-      <h1>Учёт корзин</h1>
-    <Card/>
+  <h1>gggggg</h1>
+     </Card>
+     <div class="rows">
+  <button v-on:click="addAnimal" type="button" class="btn btn-danger">Нажать</button>
+     </div>
   </div>
 </template>
 
 <script>
- /* eslint-disable */ 
-import Card from './components/card.vue' 
+import Card from './components/card.vue'
+
 export default {
   name: 'App',
   components: {
-   Card
+    Card,
+  },
+  provide:{
+    animal:"кот"
+  },
+  methods{
+    addAnimal(){
+      this.animal = 2
+    }
   }
-}
+  }
+
 </script>
 
 <style>
